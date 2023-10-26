@@ -40,7 +40,9 @@ function rot13(encodedStr) {
 		{
 			if(encodedStr[i]>='A'&&encodedStr<='Z')
 			{
-				s+=lookup.encodedStr[i];
+				let v=encodedStr[i];
+				
+				s+=lookup.v;
 			}
 			else
 			{

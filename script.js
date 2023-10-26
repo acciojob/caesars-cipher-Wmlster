@@ -38,9 +38,9 @@ function rot13(Str) {
 
 	for(let i=0;i<Str.length;i++)
 		{
-			if(Str[i].charCodeAt(0)>='A'&&Str<='Z')
+			if(Str[i].charCodeAt(0)>=65&&Str[i].charCodeAt(0)<=90)
 			{	
-				s+=lookup.Str[[i]];
+				s+=lookup[Str[i]];
 			}
 			else
 			{

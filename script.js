@@ -48,7 +48,12 @@ function rot13(encodedStr) {
 			}
 		}
 
-  return s; //return decodedArr
+	for(let i=0;i<s.length;i++)
+		{
+			decodedArr.push(s[i]);
+		}
+
+  return decodedArr; //return decodedArr
 }
 
 // You can test your code by running the above function and printing it to console by pressing the run button at the top. To run it with input 36, uncomment the following line

@@ -39,20 +39,13 @@ function rot13(encodedStr) {
 	for(let i=0;i<encodedStr.length;i++)
 		{
 			if(encodedStr[i]>='A'&&encodedStr<='Z')
-			{
-				let v=encodedStr[i];
-				
-				s+=lookup.v;
+			{	
+				s+=lookup.encodedStr[[i]];
 			}
 			else
 			{
 				s+=encodedStr[i];
 			}
-		}
-
-	for(var i=0;i<s.length;i++)
-		{
-			decodedArr.push(s[i]);
 		}
 
   return decodedArr; //return decodedArr
